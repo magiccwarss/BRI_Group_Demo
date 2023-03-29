@@ -19,6 +19,13 @@
   src: url("../Fonts/Golos-Text_Medium.ttf");
   src: url("../Fonts/Golos-Text_DemiBold.ttf");
 }
+
+
+body{
+   background-color: #FAFAFA;
+}
+
+
 /*------------------ HEADER -----------------*/
 /*------------------ HEADER UP -----------------*/
 .wrapper {
