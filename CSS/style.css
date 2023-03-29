@@ -878,6 +878,9 @@
   display: block;
 }
 
+.drop .FAQ_cardText{
+  color: #3464CF;
+}
 
 .FAQ_Card_DropDown_Menu {
   display: none;
@@ -916,9 +919,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.FAQ_cardText.drop {
-  color: #3464CF;
-}
+
 
 .FAQ_card_img {
   cursor: pointer;
