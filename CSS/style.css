@@ -1879,6 +1879,7 @@
     z-index: 3;
     background-color: #FAFAFA;
     padding: 15px 0px;
+    border-radius: 15px;
   }
 }
 @media (min-width: 1844px) {
