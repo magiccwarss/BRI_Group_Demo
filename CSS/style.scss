@@ -1,0 +1,1937 @@
+@font-face {
+  font-family: "Golos";
+  src: url("../Fonts/Golos-Text_Regular.ttf");
+  src: url("../Fonts/Golos-Text_Medium.ttf");
+  src: url("../Fonts/Golos-Text_DemiBold.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap');
+
+/*------------------ HEADER -----------------*/
+
+
+/*------------------ HEADER UP -----------------*/
+
+
+
+.wrapper {
+  background-image: url("../IMG/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {}
+
+.header_up {
+  background: #F2F3F5;
+}
+
+.header_up_container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0px 20px
+}
+
+.header_up_content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header_up_text {
+  padding: 12px 0px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #5D6064;
+}
+
+.header_up_text.forPhone{
+  display: none;
+}
+
+/*------------------ HEADER DOWN -----------------*/
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0px 20px
+}
+
+.header_down {
+  margin: 20px 0px;
+}
+
+.header_down_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  white-space: nowrap;
+  align-items: center;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 80;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #3464CF;
+  margin: 6px 0;
+}
+
+
+.header_logo {}
+
+.logo {}
+
+.navigation {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.navigation_item {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #292D32;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #3464CF;
+  }
+}
+
+.header_button {
+  background-color: #3464CF;
+  border-radius: 14px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2E4B8A;
+  }
+}
+
+.header_button.forPhone{
+  display: none;
+}
+
+.header_button_text {
+  display: inline-block;
+  padding: 12px 16px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #FAFAFA;
+}
+
+
+/*------------------ GENERAL -----------------*/
+
+.general {
+  overflow: hidden;
+}
+
+.general_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.general_left {
+  max-width: 525px;
+  white-space: nowrap;
+}
+
+.generalUptext {
+  margin-bottom: 12px;
+  position: relative;
+
+  display: inline-block;
+  background: #3464CF;
+  border-radius: 39px;
+}
+
+.generalUptext::after {
+  content: url("../IMG/Flag_China.svg");
+  position: absolute;
+  right: -16px;
+  bottom: 2px;
+
+}
+
+.generalUptextItem {
+  padding: 6px 12px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #FAFAFA;
+}
+
+.generalMainText {
+  margin-bottom: 12px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 104%;
+
+  color: #292D32;
+}
+
+.generalSubText {
+  max-width: 524px;
+  margin-bottom: 24px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #5D6064;
+}
+
+.general_buttons {
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 18px;
+  align-items: center;
+
+  border: 1px solid rgba(85, 85, 85, 0.1);
+  border-radius: 14px;
+
+}
+
+.general_button_one {
+
+  background-color: #3464CF;
+  border-radius: 14px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2E4B8A;
+  }
+}
+
+.general_button_oneText {
+  padding: 16px 24px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FAFAFA;
+}
+
+.general_button_two {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.general_button_two_Img {}
+
+.general_button_twoText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #292D32;
+
+  &:hover {
+    color: #3464CF
+  }
+}
+
+.general_button_three {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.general_button_three_Img {}
+
+.general_button_threeText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #292D32;
+
+  &:hover {
+    color: #3464CF
+  }
+}
+
+.general_right {}
+
+.track_withLogo {
+  max-width: none;
+  width: 130%;
+}
+
+
+/*------------------ FIND OUT COST -----------------*/
+
+.find_out_cost {
+  padding-top: 18px;
+  background-color: #FAFAFA;
+}
+
+.container {}
+
+.find_out_cost_content {
+  padding: 32px 24px;
+
+
+  background: #FFFFFF;
+  border: 1px solid #F2F3F5;
+  border-radius: 24px;
+
+}
+
+.find_out_costText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #292D32;
+
+}
+
+.fint_out_constInputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.calculation_input_wrapper {
+  margin-top: 12px;
+
+  position: relative;
+  cursor: pointer;
+  max-width: 297px;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+
+  color: rgba(41, 45, 50, 0.3);
+}
+
+.calculation_input {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+
+  background: linear-gradient(0deg, #F8F8F8, #F8F8F8), #E1E3E6;
+  border-radius: 12px;
+}
+
+.calculation_input:focus {
+  outline: none;
+}
+
+.find_out_costButton {
+  margin-top: 12px;
+  display: inline-block;
+  max-width: 297px;
+  width: 100%;
+
+  background-color: #3464CF;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2E4B8A;
+  }
+}
+
+.find_out_costButtonText {
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 17px 0px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+
+/*------------------ OUR SERVICES -----------------*/
+
+.our_services {
+  padding-top: 40px;
+  background-color: #FAFAFA;
+}
+
+.our_servicesMainText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  text-align: center;
+  color: #292D32;
+
+}
+
+.our_services_Content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.our_services_Card {
+  margin-top: 37px;
+  overflow: hidden;
+
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  max-height: 235px;
+  height: 100%;
+  background: #F2F3F5;
+  border-radius: 24px;
+}
+
+.our_services_Card::after {
+  content: url('../IMG/arrow-top-right.svg');
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.our_services_Card_up {
+  padding-top: 24px;
+  padding-left: 24px;
+
+}
+
+.our_services_cardText {
+  margin-bottom: 8px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+}
+
+.our_services_cardSubText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+
+  color: rgba(41, 45, 50, 0.75);
+}
+
+.our_services_Card_down {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.our_services_Card_downImg {}
+
+.our_services_Card.airPlane {
+  height: 235px;
+}
+
+.our_services_Card.airPlane::before {
+  content: url("../IMG/our_servicesImg6.png");
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.our_services_Card_downImg {}
+
+
+
+/*------------------ CONTRACT -----------------*/
+
+.contract {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-image: url("../IMG/contract_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {}
+
+.contract_content_wrapper {
+  padding: 180px 0px;
+}
+
+.contract_content {
+  padding: 32px 24px;
+
+  background: #FFFFFF;
+  border: 1px solid #F2F3F5;
+  border-radius: 24px;
+}
+
+.contract_Text {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+
+  color: #292D32;
+
+}
+
+
+
+/*------------------ LOGISTICS OPERATOR -----------------*/
+
+.LogisticsOperator {
+  padding-top: 52px;
+  position: relative;
+  background-color: #FAFAFA;
+}
+
+.container {}
+
+.LogisticsOperator_content {}
+
+.LogisticsOperator_left {
+  max-width: 524px;
+}
+
+.LogisticsOperator_left_content {}
+
+.LogisticsOperator_logo_and_Main_Text {
+  margin-bottom: 36px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.LogisticsOperatorLogo {
+  max-width: 73px;
+  max-height: 73px;
+
+  display: inline-block;
+  background: #F2F3F5;
+  border-radius: 6px;
+}
+
+.LogisticsOperatorLogoImg {
+  padding: 20px 10px;
+}
+
+.LogisticsOperatorMainText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 104%;
+
+  color: #292D32;
+}
+
+.LogisticsOperatorSubText {
+  margin-top: 14px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #5D6064;
+}
+
+.LogisticsOperator_right {
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+.logisticsAdvantages {
+  margin-top: 94px;
+  position: relative;
+  z-index: 2;
+}
+
+.logisticsAdvantages_content_wrapper {
+  padding: 36px 0px;
+
+
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+
+.logisticsAdvantages_content_wrapper::before {
+  content: "";
+  max-width: 95%;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  background: #DBDCE0;
+  height: 2px;
+  border-radius: 0px 44px 44px 0px;
+
+  left: 0px;
+  top: 33%;
+}
+
+.logisticsAdvantages_content_wrapper::after {
+  content: "";
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: #DBDCE0;
+  border-radius: 50%;
+  right: 5%;
+  top: 31.5%;
+}
+
+.logisticsAdvantages_content {
+  padding: 0px 10px;
+
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logisticsAdvantages_card {
+  max-width: 415px;
+}
+
+.logisticsAdvantagesCardImg {}
+
+.logisticsAdvantagesCardMainText {
+
+  margin-top: 14px;
+  margin-bottom: 8px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #121212;
+}
+
+.logisticsAdvantagesCardSubText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+
+  color: rgba(18, 18, 18, 0.44);
+}
+
+
+/*------------------ WHY WE -----------------*/
+
+
+.why_we {
+  padding-top: 20px;
+  background-color: #FAFAFA;
+}
+
+.container {}
+
+.why_weMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why_weMainText {
+  display: inline-block;
+  position: relative;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #292D32;
+}
+
+.why_weMainText::after {
+  content: url("../IMG/arrow_down.svg");
+  position: absolute;
+  right: -20px;
+  top: 25px;
+}
+
+.why_we_content {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why_we_left {
+  max-width: 538px;
+  width: 100%;
+}
+
+.why_we_leftUp {
+  background: #FFFFFF;
+  border: 1px solid rgba(18, 18, 18, 0.05);
+  box-shadow: -15px -16px 44px rgba(215, 228, 249, 0.14), 0px 18px 52px rgba(215, 228, 249, 0.28);
+  border-radius: 12px;
+}
+
+.why_we_leftUpItems {
+  list-style-image: url("../IMG/blue_rectangle.svg");
+
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.why_we_leftUpItem {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #121212;
+
+}
+
+.why_we_leftDown {
+  margin-top: 16px;
+
+  max-width: 538px;
+  width: 100%;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(18, 18, 18, 0.05);
+  box-shadow: -15px -16px 44px rgba(215, 228, 249, 0.14), 0px 18px 52px rgba(215, 228, 249, 0.28);
+  border-radius: 12px;
+}
+
+.why_we_leftDown.forPhone{
+  display: none;
+}
+
+.why_we_leftDownContent {
+  padding: 24px 0px 22px 22px;
+}
+
+.why_we_leftDownContent_wrapper {
+  max-width: 383px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.why_we_leftDownCard {}
+
+.why_we_leftDownText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 104%;
+
+  color: #292D32;
+}
+
+.why_we_leftDownSub {
+  display: inline-block;
+  background: #3464CF;
+  border-radius: 39px;
+
+}
+
+.why_we_leftDownSubText {
+  padding: 6px 12px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FAFAFA;
+}
+
+
+/*------------------ FAQ -----------------*/
+
+.FAQ {
+  padding-top: 80px;
+  background-color: #FAFAFA;
+}
+
+.container {}
+
+.FAQ_content_Wrapper {
+  max-width: 890px;
+  padding: 0px 20px;
+  margin: 0px auto;
+}
+
+.FAQ_MainText {
+  margin-bottom: 22px;
+
+  text-align: center;
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #292D32;
+}
+
+.FAQ_content {}
+
+.FAQ_card {
+  position: relative;
+
+  margin-top: 18px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.05);
+  border-radius: 12px;
+  max-width: 870px;
+  width: 100%;
+}
+
+.FAQ_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  background: #3464CF;
+  border-radius: 46px;
+  height: 36px;
+  width: 2px;
+}
+
+.FAQ_card_content {
+  padding: 22px 5px;
+
+  max-width: 838px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FAQ_cardText {
+  margin-left: 10px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #1B1919;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #3464CF;
+  }
+
+}
+
+.FAQ_card_img {
+  cursor: pointer;
+}
+
+.ask_question_wrapper {
+  margin-top: 32px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.ask_questionText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: rgba(2, 2, 2, 0.85);
+
+}
+
+.ask_question_button {
+  display: inline-block;
+
+  background-color: #3464CF;
+  box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  border-radius: 46px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2E4B8A;
+  }
+
+}
+
+.ask_question_buttonText {
+  padding: 12px 20px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: #FAFAFA;
+}
+
+
+/*------------------ WORK WITH EVERYTHING -----------------*/
+
+
+
+.work_with_everything {
+  margin-top: 54px;
+  background: #F2F3F5;
+  overflow: hidden;
+}
+
+.container {}
+
+.work_with_everything_content {
+  padding: 30px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work_with_everything_left {
+  max-width: 100%;
+}
+
+.work_with_everything_leftMainText {
+  white-space: nowrap;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #121212;
+
+
+  span {
+    font-family: 'Golos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #3464CF;
+  }
+}
+
+.work_with_everything_leftSubText {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 36px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #121212;
+
+}
+
+.work_with_everything_leftButton_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+
+.work_with_everything_leftButton {
+  display: inline-block;
+  background-color: #3464CF;
+  border-radius: 14px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2E4B8A;
+  }
+}
+
+.work_with_everything_leftButtonText {
+  padding: 16px 24px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FAFAFA;
+
+}
+
+.dron {}
+
+.work_with_everything_right {}
+
+.work_with_everything_rightImg {
+  max-width: none;
+  width: 130%;
+}
+
+
+/*------------------ TRANSPORTATION PROCESS -----------------*/
+
+.transportation_Process {
+  background-color: #FAFAFA;
+  padding-top: 35px;
+}
+
+.container {}
+
+.transportation_ProcessMainText {
+  margin-bottom: 24px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+
+  color: #292D32;
+}
+
+.transportation_Process_content {}
+
+.transportation_Process_cards {
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.transportation_Process_card {
+  position: relative;
+  background-image: url("../IMG/transportation_Process_cardI_background.jpg");
+  background-position: center;
+  background-size: cover;
+
+  margin-top: 16px;
+  max-width: 293px;
+  max-height: 150px;
+  height: 100%;
+  width: 100%;
+
+}
+
+.transportation_Process_card.first {
+  position: relative;
+}
+
+.transportation_Process_card.first::after {
+  content: url("../IMG/transportation_process_arrow.svg");
+  position: absolute;
+  right: -30px;
+  bottom: -30%;
+}
+
+.transportation_Process_card::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 9%;
+  height: 125px;
+  width: 2px;
+  background: #3464CF;
+  border-radius: 24px;
+}
+
+.transportation_Process_card_content {
+  padding: 58px 10px 20px 20px;
+}
+
+.transportation_Process_cardMainText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #292D32;
+}
+
+.transportation_Process_cardSubText {
+  margin-top: 8px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+
+  color: rgba(41, 45, 50, 0.75);
+}
+
+.transportation_ProcessDown {}
+
+.transportation_ProcessDown.forPhone {
+  display: none;
+}
+
+.transportation_ProcessDown_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.transportation_ProcessDownCard {
+  display: inline-block;
+  margin-top: 14px;
+  background: #3464CF;
+  border-radius: 39px;
+}
+
+.transportation_ProcessDownCard.one {
+  max-width: 400px;
+  width: 100%;
+}
+
+.transportation_ProcessDownCard.two {
+  max-width: 325px;
+}
+
+.transportation_ProcessDownCard.three {
+  max-width: 176px;
+}
+
+.transportation_ProcessDownCard.four {
+  max-width: 262px;
+}
+
+.transportation_ProcessDownCardText {
+  padding: 6px 0px;
+  text-align: center;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #FAFAFA;
+}
+
+/*------------------ OUR CARGOES -----------------*/
+
+.OurCargoes {
+  padding-top: 50px;
+  background-color: #FAFAFA;
+}
+
+.container {}
+
+.OurCargoesMainText {
+  text-align: center;
+  margin-bottom: 18px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #292D32;
+}
+
+.OurCargoes_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.OurCargoes_card {
+  margin-top: 16px;
+
+  max-width: 290px;
+  height: 304px;
+  width: 100%;
+
+  border: 1px solid rgba(18, 18, 18, 0.05);
+  filter: drop-shadow(-15px -16px 44px rgba(215, 228, 249, 0.14)) drop-shadow(0px 18px 52px rgba(215, 228, 249, 0.28));
+  border-radius: 12px;
+
+}
+
+.OurCargoes_card.first {
+  background-image: url("../IMG/OurCargoesImg1.jpg");
+  background-position: center;
+
+}
+
+.OurCargoes_card.scnd {
+  background-image: url("../IMG/OurCargoesImg2.jpg");
+  background-position: center;
+
+}
+
+.OurCargoes_card.third {
+  background-image: url("../IMG/OurCargoesImg3.jpg");
+  background-position: center;
+
+}
+
+.OurCargoes_card.fourth {
+  background-image: url("../IMG/OurCargoesImg4.jpg");
+  background-position: center;
+}
+
+.OurCargoes_card_content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.OurCargoes_card_wrap {
+  margin-left: 9px;
+  margin-bottom: 9px;
+  max-width: 100px;
+  display: inline-block;
+
+
+  background: rgba(243, 243, 243, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+
+  border-radius: 39px;
+}
+
+.OurCargoes_cardText {
+  padding: 6px 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+
+/*------------------ FOOTER -----------------*/
+.footer {
+  margin-top: 45px;
+  background-color: #F2F3F5;
+}
+
+.container {}
+
+.footer_content {
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer_logo {}
+
+.footer_scnd_section {}
+
+.footer_scnd_sectionMainText {
+  margin-bottom: 8px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #292D32;
+}
+
+.footer_scnd_sectionSubTexts {
+  li{
+    margin-top: 9px;
+  }
+}
+
+.footer_sectionSubText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  transition: all 0.3s ease-in-out;
+
+  color: #292D32;
+
+  &:hover{
+    color: #3464CF;
+  }
+}
+
+.footer_third_section {}
+
+
+.footer_third_sectionSubTexts {
+  li+li{
+    margin-top: 9px;
+  }
+}
+
+.footerContacts {}
+
+.footerContactsMainText {
+  
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  
+  color: #121212;
+}
+
+.footerPhone_and_work {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footerPhoneImg {}
+
+.footerPhone_and_workText {}
+
+.footerPhoneText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  
+  color: #121212;
+}
+
+.workText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+ 
+  color: rgba(18, 18, 18, 0.4);
+}
+
+.footerMail {
+  margin-top: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footerMailImg {}
+
+.gmailTexts {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  
+  color: #121212;
+}
+
+.gmailText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  
+  color: #121212;
+}
+
+.gmailSubText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  
+  color: rgba(18, 18, 18, 0.4);
+}
+
+.footer_Social {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.whats_app {}
+
+.whats_appImg {}
+
+.telegram {}
+
+.confidentially {
+  padding-bottom: 20px;
+}
+
+.confidentiallyMainText {
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  
+  color: rgba(18, 18, 18, 0.44);
+}
+
+.confidentiallySubText {
+  margin-top: 9px;
+
+  font-family: 'Golos';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  
+  color: rgba(18, 18, 18, 0.44);
+}
+
+
+/*------------------ ADAPTIVE -----------------*/
+
+
+@media (max-width:388px) {
+  .generalMainText{
+    font-size: 28px;
+  }
+  .generalSubText,.our_services_cardSubText,.LogisticsOperatorSubText,.logisticsAdvantagesCardSubText,.why_we_leftUpItem,.why_we_leftDownSubText,.FAQ_cardText,.work_with_everything_leftSubText,.transportation_Process_cardSubText,.transportation_ProcessDownCardText.one,.transportation_ProcessDownCard.two,.transportation_ProcessDownCard.three,.transportation_ProcessDownCard.four,.footer_sectionSubText{
+    font-size: 12px;
+  }
+
+  .find_out_costText,.contract_Text,.transportation_Process_cardMainText{
+    font-size: 16px;
+  }
+
+  .our_servicesMainText,.FAQ_MainText,.work_with_everything_leftMainText,
+  .transportation_ProcessMainText,.OurCargoesMainText{
+    font-size: 18px;
+  }
+
+  .work_with_everything_leftMainText span{
+    font-size: 18px !important;
+  }
+
+  .our_services_cardText{
+    font-size: 14px;
+  }
+
+  .LogisticsOperatorMainText {
+    font-size: 20px;
+  }
+  
+  .logisticsAdvantagesCardMainText{
+    font-size: 17px;
+  }
+
+  .why_we_leftDownText{
+    font-size: 26px;
+  }
+
+}
+
+@media (max-width:415px) {
+  .logisticsAdvantages{
+    max-height: 245px;
+  }
+
+  .why_weMainText::after {
+    top: 13px;
+  }
+
+  .why_we_left{
+    margin-top: 40px;
+  }
+
+  .LogisticsOperator{
+    padding-top:0px ;
+}
+
+.work_with_everything_leftMainText{
+  line-height: 1rem;
+}
+}
+
+@media (max-width:475px) {
+  .general_button_three{
+    display: none;
+  }
+  .general_buttons{
+    justify-content: start;
+    gap: 18px;
+  }
+
+  .why_we_leftDownContent{
+    padding: 24px 20px 22px 22px
+  }
+}
+
+
+@media (max-width:555px) {
+  .general_left{
+    white-space: normal;
+  }
+}
+
+@media (max-width:635px) {
+  .transportation_ProcessDown {
+    display: none;
+  }
+
+  .transportation_ProcessDown.forPhone {
+    display: block;
+  }
+
+  .transportation_Process_card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .transportation_Process_cards {
+    justify-content: space-between !important;
+  }
+
+  .transportation_ProcessDownCardText.one {
+    padding: 6px 10px;
+  }
+
+  .work_with_everything_leftMainText{
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+@media (max-width:642px) {
+  .ask_question_wrapper{
+    flex-wrap: wrap;
+  }
+  .ask_question_button{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .ask_question_buttonText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:675px) {
+  .transportation_Process_card.first::after {
+    display: none;
+  }
+
+  .footer_content{
+    display: block;
+  }
+
+  .footer_scnd_section{
+    margin-top: 28px;
+  }
+
+  .footer_third_section{
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  .confidentially{
+    margin-top: 48px;
+  }
+}
+
+@media (max-width:710px) {
+  .LogisticsOperator_right{
+    width: 120% !important;
+  }
+}
+
+@media (max-width:950px) {
+  .work_with_everything_content{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work_with_everything_left{
+    margin-top: 30px;
+    padding: 0px 15px;
+  }
+
+  .dron{
+    display: none;
+  }
+
+  .work_with_everything_leftButton{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .work_with_everything_leftButtonText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+@media (max-width:970px) {
+  .general_content{
+    flex-wrap: wrap;
+  }
+  .general_right{
+    margin-top: 20px;
+  }
+
+  .fint_out_constInputs{
+    display: block;
+}
+.calculation_input_wrapper,.find_out_costButton{
+  max-width: 100%;
+}
+
+.why_we_content{
+  flex-wrap: wrap;
+}
+
+.why_we_leftDown{display: none;}
+.why_we_leftDown.forPhone{
+  display: block;
+  max-width: 100%;
+}
+
+.why_we_left{
+  max-width: 100%;
+}
+
+.OurCargoes_content{
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.find_out_costText{
+  text-align: center;
+}
+
+.contract_Text{
+  text-align: center;
+}
+
+}
+
+@media (max-width:975px) {
+  .LogisticsOperator{
+    overflow: hidden;
+  }
+
+  .LogisticsOperator_left_content{
+    position: static;
+    background-color: none;
+  }
+
+  .LogisticsOperator_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LogisticsOperator_right{
+    position: static;
+    display: block;
+  }
+
+  .logisticsAdvantages_content_wrapper::before{
+    display: none;
+  }
+
+  .logisticsAdvantages_content_wrapper::after{
+    display: none;
+  }
+
+  .logisticsAdvantages_content{
+    flex-direction: column;
+  }
+  .logisticsAdvantages{
+    max-width: 100%;
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  .logisticsAdvantages_card{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+  }
+
+  .logisticsAdvantages_cardText{
+    display: flex;
+    flex-direction: column;
+  }
+  
+.LogisticsOperator_right{
+  max-width: none;
+  width: 140%;
+}
+
+
+
+.logisticsAdvantages_content_wrapper{
+  top: -100px;
+  position: relative;
+}
+
+.logisticsAdvantages_content{
+  padding: 0px 15px;
+}
+}
+
+
+@media (max-width:1023px) {
+  .hamburger{
+
+    display: inline-block;
+    z-index: 80;
+  }
+
+  .header_up{
+    display: none;
+  }
+  .header_button{
+    display: none;
+  }
+
+  .navigation_and_others{
+    position: fixed;
+    left: -100%;
+    top: 0px;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    color: black;
+    z-index: 30;
+  }
+
+  .navigation{
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.header_up_text.forPhone{
+  display: block;
+}
+
+.header_button.forPhone{
+  display: inline-block;
+}
+
+.navigation_item{
+    font-size: 16px !important;
+}
+
+.active {
+    left: 0%;
+    color: black;
+    
+}
+
+.lock {
+    overflow: hidden;
+  }   
+
+.header_logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general_content{
+  padding-top: 40px;
+}
+
+}
+
+
+@media (max-width:1032px) {
+  .logisticsAdvantages_content_wrapper::before{
+    top: 30%;
+  }
+
+  .logisticsAdvantages_content_wrapper::after{
+    top: 28.5%;
+  }
+}
+
+@media (max-width:1185px) {
+  .navigation_item{
+    font-size: 10px;
+  }
+}
+
+
+
+@media (max-width:1241px) {
+  .transportation_Process_cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:1259px) {
+  .our_services_Content{
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:1355px) {
+  .LogisticsOperator_left_content{
+    position: relative;
+    z-index: 3;
+    background-color: #FAFAFA;
+    padding: 15px 0px;
+  }
+}
+@media (min-width:1844px) {
+  .work_with_everything_rightImg {
+    max-width: none;
+    width: 180%;
+  }
+}
+
+@media (min-width:2000px) {
+  .logisticsAdvantages {
+    max-width: none;
+    width: 130%;
+  }
+}
+
+
+@media (min-width:2270px) {
+  .work_with_everything_rightImg{
+    width: 210%;
+  }
+}
