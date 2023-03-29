@@ -823,6 +823,7 @@
 /*------------------ FAQ -----------------*/
 .FAQ {
   padding-top: 80px;
+  padding-bottom: 54px;
   background-color: #FAFAFA;
 }
 
@@ -982,7 +983,7 @@
 
 /*------------------ WORK WITH EVERYTHING -----------------*/
 .work_with_everything {
-  margin-top: 54px;
+  
   background: #F2F3F5;
   overflow: hidden;
 }
