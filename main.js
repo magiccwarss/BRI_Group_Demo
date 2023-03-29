@@ -4,7 +4,7 @@ const bodyes = document.querySelector('body');
 
 const faqs = document.querySelectorAll('.FAQ_card');
 const dropDown = document.querySelector('.FAQ_Card_DropDown_Menu');
-const faqText = document.querySelector('.FAQ_cardText');
+const faqTexts = document.querySelector('.FAQ_cardText');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
