@@ -838,6 +838,7 @@
 
 .FAQ_card {
   position: relative;
+  cursor: pointer;
   margin-top: 18px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.05);
@@ -873,6 +874,36 @@
           align-items: center;
 }
 
+.drop .FAQ_Card_DropDown_Menu{
+  display: block;
+}
+
+
+.FAQ_Card_DropDown_Menu {
+  display: none;
+  
+  z-index: 3;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.05);
+          box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.05);
+  border-radius: 0px 0px 12px 12px;
+}
+
+
+
+.FAQ_Card_DropDown_MenuText{
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1919;
+}
+
 .FAQ_cardText {
   margin-left: 10px;
   font-family: "Golos";
@@ -885,7 +916,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.FAQ_cardText:hover {
+.FAQ_cardText.drop {
   color: #3464CF;
 }
 
@@ -1445,7 +1476,7 @@
   .generalMainText {
     font-size: 28px;
   }
-  .generalSubText, .our_services_cardSubText, .LogisticsOperatorSubText, .logisticsAdvantagesCardSubText, .why_we_leftUpItem, .why_we_leftDownSubText, .FAQ_cardText, .work_with_everything_leftSubText, .transportation_Process_cardSubText, .transportation_ProcessDownCardText.one, .transportation_ProcessDownCard.two, .transportation_ProcessDownCard.three, .transportation_ProcessDownCard.four, .footer_sectionSubText {
+  .generalSubText, .our_services_cardSubText, .LogisticsOperatorSubText, .logisticsAdvantagesCardSubText, .why_we_leftUpItem, .why_we_leftDownSubText, .FAQ_cardText, .work_with_everything_leftSubText, .transportation_Process_cardSubText, .transportation_ProcessDownCardText.one, .transportation_ProcessDownCard.two, .transportation_ProcessDownCard.three, .transportation_ProcessDownCard.four, .footer_sectionSubText,.FAQ_Card_DropDown_MenuText,.ask_questionText {
     font-size: 12px;
   }
   .find_out_costText, .contract_Text, .transportation_Process_cardMainText {
@@ -1470,6 +1501,8 @@
   .why_we_leftDownText {
     font-size: 26px;
   }
+
+
 }
 @media (max-width: 415px) {
   .logisticsAdvantages {
