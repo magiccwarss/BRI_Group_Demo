@@ -21,6 +21,11 @@
 }
 
 
+body {
+  scroll-behavior: smooth;
+}
+
+
 /*------------------ HEADER -----------------*/
 /*------------------ HEADER UP -----------------*/
 .wrapper {
@@ -514,7 +519,7 @@
 /*------------------ CONTRACT -----------------*/
 .contract {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 94px;
   background-image: url("../IMG/contract_background.jpg");
   background-size: cover;
   background-position: center;
@@ -595,11 +600,25 @@
 }
 
 .LogisticsOperator_right {
+  position: relative;
   z-index: 1;
   position: absolute;
   right: 0px;
   top: 0px;
 }
+
+.LogisticsOperator_right::before{
+  content: "";
+  position: absolute;
+  max-width: 850px;
+  max-height: 315px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #FAFAFA 100%);
+  bottom: 0px;
+  left: 0px;
+}
+
 
 .logisticsAdvantages {
   margin-top: 94px;
@@ -756,7 +775,22 @@
   gap: 12px;
 }
 
-.why_we_leftUpItem {
+.why_we_leftUpItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.why_we_leftUpItemImg{
+  max-width: 10px;
+  max-height: 10px;  
+}
+
+.why_we_leftUpItemImg img{
+  max-width: none;
+}
+
+.why_weLeftUpItemtext {
   font-family: "Golos";
   font-style: normal;
   font-weight: 400;
@@ -807,6 +841,8 @@
 }
 
 .why_we_leftDownSub {
+  margin-top: 8px;
+
   display: inline-block;
   background: #3464CF;
   border-radius: 39px;
@@ -890,6 +926,7 @@
 
 .drop .FAQ_cardText{
   color: #3464CF;
+
 }
 
 .FAQ_Card_DropDown_Menu {
@@ -905,6 +942,8 @@
 
 
 .FAQ_Card_DropDown_MenuText{
+  text-align: left;
+
   padding-top: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -919,6 +958,7 @@
 
 .FAQ_cardText {
   margin-left: 10px;
+  text-align: left;
   font-family: "Golos";
   font-style: normal;
   font-weight: 400;
@@ -1219,6 +1259,7 @@
 /*------------------ OUR CARGOES -----------------*/
 .OurCargoes {
   padding-top: 50px;
+  padding-bottom: 45px;
   background-color: #FAFAFA;
 }
 
@@ -1258,21 +1299,25 @@
 }
 
 .OurCargoes_card.first {
+  max-height: 290px;
   background-image: url("../IMG/OurCargoesImg1.jpg");
   background-position: center;
 }
 
 .OurCargoes_card.scnd {
+  max-height: 290px;
   background-image: url("../IMG/OurCargoesImg2.jpg");
   background-position: center;
 }
 
 .OurCargoes_card.third {
+  max-height: 290px;
   background-image: url("../IMG/OurCargoesImg3.jpg");
   background-position: center;
 }
 
 .OurCargoes_card.fourth {
+  max-height: 290px;
   background-image: url("../IMG/OurCargoesImg4.jpg");
   background-position: center;
 }
@@ -1325,7 +1370,6 @@
 
 /*------------------ FOOTER -----------------*/
 .footer {
-  margin-top: 45px;
   background-color: #F2F3F5;
 }
 
@@ -1483,11 +1527,18 @@
 }
 
 /*------------------ ADAPTIVE -----------------*/
+
+@media (max-width:350px) {
+  .LogisticsOperatorMainText{
+    white-space: normal !important;
+  }
+}
+
 @media (max-width: 390px) {
   .generalMainText {
     font-size: 28px;
   }
-  .generalSubText, .our_services_cardSubText, .LogisticsOperatorSubText, .logisticsAdvantagesCardSubText, .why_we_leftUpItem, .why_we_leftDownSubText, .FAQ_cardText, .work_with_everything_leftSubText, .transportation_Process_cardSubText, .transportation_ProcessDownCardText.one, .transportation_ProcessDownCard.two, .transportation_ProcessDownCard.three, .transportation_ProcessDownCard.four, .footer_sectionSubText,.FAQ_Card_DropDown_MenuText,.ask_questionText {
+  .generalSubText, .our_services_cardSubText, .LogisticsOperatorSubText, .logisticsAdvantagesCardSubText, .why_we_leftUpItem, .why_we_leftDownSubText, .FAQ_cardText, .work_with_everything_leftSubText, .transportation_Process_cardSubText, .transportation_ProcessDownCardText.one, .transportation_ProcessDownCard.two, .transportation_ProcessDownCard.three, .transportation_ProcessDownCard.four, .footer_sectionSubText,.FAQ_Card_DropDown_MenuText,.ask_questionText,.why_weLeftUpItemtext,.transportation_ProcessDownCardText {
     font-size: 12px;
   }
   .find_out_costText, .contract_Text, .transportation_Process_cardMainText {
@@ -1504,7 +1555,7 @@
     font-size: 14px;
   }
   .LogisticsOperatorMainText {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   .logisticsAdvantagesCardMainText {
     font-size: 17px;
@@ -1522,16 +1573,33 @@
   .why_weMainText::after {
     top: 13px;
   }
-  .why_we_left {
-    margin-top: 40px;
-  }
+  
   .LogisticsOperator {
     padding-top: 0px;
   }
   .work_with_everything_leftMainText {
     line-height: 1rem;
   }
+
+  .LogisticsOperatorMainText {
+    font-size: 20px !important;
+  }
 }
+
+
+@media (max-width:429px) {
+
+  .transportation_ProcessDownCardText.one{
+    text-align: left;
+  }
+
+  .transportation_ProcessDownCardText{
+    text-align: left;
+    padding-left: 12px;
+  }
+
+} 
+
 @media (max-width: 475px) {
   .general_button_three {
     display: none;
@@ -1546,6 +1614,14 @@
     padding: 24px 20px 22px 22px;
   }
 }
+
+@media (max-width:540px) {
+  .LogisticsOperatorMainText{
+    font-size: 26px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 555px) {
   .general_left {
     white-space: normal;
@@ -1694,6 +1770,13 @@
     text-align: center;
   }
 }
+
+@media (max-width:970px) {
+  .why_we_left{
+    padding-top: 40px;
+  }
+}
+
 @media (max-width: 975px) {
   .LogisticsOperator {
     overflow: hidden;
@@ -1768,6 +1851,12 @@
   }
   .logisticsAdvantages_content {
     padding: 0px 15px;
+  }
+
+  .LogisticsOperator_right::before{
+    max-width: 950px;
+    right: 50%;
+    bottom: 25%;
   }
 }
 @media (max-width: 1023px) {
@@ -1866,6 +1955,10 @@
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+
+  .transportation_Process_card.first::after{
+    display: none;
+  }
 }
 @media (max-width: 1259px) {
   .our_services_Content {
@@ -1882,12 +1975,38 @@
     border-radius: 15px;
   }
 }
+
+@media (min-width:1625px) {
+  .work_with_everything_rightImg{
+    width: 150%;
+  }
+}
+
+@media (min-width:1648px) {
+  .track_withLogo{
+    width: 150%;
+  }
+}
+
 @media (min-width: 1844px) {
   .work_with_everything_rightImg {
     max-width: none;
     width: 180%;
   }
 }
+
+@media (min-width:1905px) {
+  .contract{
+    padding-bottom: 190px;
+  }
+}
+
+@media (min-width:1925px) {
+  .track_withLogo{
+    width: 200%;
+  }
+}
+
 @media (min-width: 2000px) {
   .logisticsAdvantages {
     max-width: none;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,15 @@
   <link rel="stylesheet" href="./CSS/style.css">
   <title>Bri Group</title>
 </head>
+
 <body>
   <div class="wrapper">
     <header class="header">
       <div class="header_up">
         <div class="header_up_container">
-            <div class="header_up_content">
-              <p class="header_up_text">Мы работаем с частными лицами и бизнесом</p>
-            </div>
+          <div class="header_up_content">
+            <p class="header_up_text">Мы работаем с частными лицами и бизнесом</p>
+          </div>
         </div>
       </div>
       <div class="container">
@@ -25,23 +27,23 @@
               <div class="bar"></div>
               <div class="bar"></div>
               <div class="bar"></div>
-          </div>
+            </div>
             <div class="header_logo"><img class="logo" src="./IMG/logo.svg" alt="logo"></div>
             <div class="navigation_and_others">
               <ul class="navigation">
-                <li><a class="navigation_item" href="#">Узнать стоимость</a></li>
-                <li><a class="navigation_item" href="#">Наши услуги</a></li>
-                <li><a class="navigation_item" href="#">Заключить договор</a></li>
-                <li><a class="navigation_item" href="#">О нас</a></li>
-                <li><a class="navigation_item" href="#">Почему мы?</a></li>
-                <li><a class="navigation_item" href="#">Часто задаваемые вопросы</a></li>
-                <li><a class="navigation_item" href="#">Процесс перевозок</a></li>
-                <li><a class="navigation_item" href="#">Наши грузы</a></li>
+                <li><a class="navigation_item" href="#findOutCost">Узнать стоимость</a></li>
+                <li><a class="navigation_item" href="#OurServices">Наши услуги</a></li>
+                <li><a class="navigation_item" href="#Contract">Заключить договор</a></li>
+                <li><a class="navigation_item" href="#LogisticsOperator">О нас</a></li>
+                <li><a class="navigation_item" href="#WhyWe">Почему мы?</a></li>
+                <li><a class="navigation_item" href="#FAQ">Часто задаваемые вопросы</a></li>
+                <li><a class="navigation_item" href="#TransportationProcess">Процесс перевозок</a></li>
+                <li><a class="navigation_item" href="#OurCargoes">Наши грузы</a></li>
               </ul>
               <p class="header_up_text forPhone">Мы работаем с частными лицами и бизнесом</p>
               <div class="header_button forPhone"><a class="header_button_text" href="#">Обратный звонок</a></div>
             </div>
-           
+
             <div class="header_button"><a class="header_button_text" href="#">Обратный звонок</a></div>
           </div>
         </div>
@@ -51,18 +53,24 @@
       <div class="container">
         <div class="general_content">
           <div class="general_left">
-            <div class="generalUptext"><p class="generalUptextItem">Доставка из Китая</p></div>
+            <div class="generalUptext">
+              <p class="generalUptextItem">Доставка из Китая</p>
+            </div>
             <p class="generalMainText">Доставка грузов <br> из Китая в Россию</p>
-            <p class="generalSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco.</p>
+            <p class="generalSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud
+              exercitation ullamco.</p>
             <div class="general_buttons">
-              <div class="general_button_one"><a href="#"><p class="general_button_oneText">Подробнее</p></a></div>
+              <div class="general_button_one"><a href="#">
+                  <p class="general_button_oneText">Подробнее</p>
+                </a></div>
               <div class="general_button_two">
                 <img class="general_button_two_Img" src="./IMG/arrow-down.svg" alt="">
-                <a class="general_button_twoText" href="#">Наши услуги</a>
+                <a class="general_button_twoText" href="#OurServices">Наши услуги</a>
               </div>
               <div class="general_button_three">
                 <img class="general_button_three_Img" src="./IMG/arrow-down.svg" alt="">
-                <a class="general_button_threeText" href="#">Заключить договор</a>
+                <a class="general_button_threeText" href="#Contract">Заключить договор</a>
               </div>
             </div>
           </div>
@@ -74,7 +82,7 @@
     </div>
   </div>
 
-  <div class="find_out_cost">
+  <div id="findOutCost" class="find_out_cost">
     <div class="container">
       <div class="find_out_cost_content">
         <p class="find_out_costText">Узнать стоимость</p>
@@ -82,23 +90,26 @@
           <div class="calculation_input_wrapper">
             <label class="label">Ваше имя</label>
             <input class="calculation_input" type="text">
-        </div>
-        <div class="calculation_input_wrapper">
-          <label class="label">Ваш номер телефона</label>
-          <input class="calculation_input" type="tel">
-       </div>
-       <div class="calculation_input_wrapper">
-        <label class="label">Комментарий</label>
-        <input class="calculation_input" type="text">
-    </div>
-       <div class="find_out_costButton">
-        <a href="#"><p class="find_out_costButtonText">Оставить заявку</p></a></div>
+          </div>
+          <div class="calculation_input_wrapper">
+            <label class="label">Ваш номер телефона</label>
+            <input class="calculation_input" type="tel">
+          </div>
+          <div class="calculation_input_wrapper">
+            <label class="label">Комментарий</label>
+            <input class="calculation_input" type="text">
+          </div>
+          <div class="find_out_costButton">
+            <a href="#">
+              <p class="find_out_costButtonText">Оставить заявку</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="our_services">
+  <div id="OurServices" class="our_services">
     <div class="container">
       <p class="our_servicesMainText">Наши услуги</p>
       <div class="our_services_Content">
@@ -110,7 +121,7 @@
           <div class="our_services_Card_down">
             <img class="our_services_Card_downImg" src="./IMG/our_servicesImg1.png" alt="">
           </div>
-        </div>        
+        </div>
         <div class="our_services_Card">
           <div class="our_services_Card_up">
             <p class="our_services_cardText">Срочная доставка и перевозка <br> грузов </p>
@@ -158,13 +169,13 @@
           </div>
         </div>
 
-        
-      
+
+
       </div>
     </div>
   </div>
 
-  <div class="contract">
+  <div id="Contract" class="contract">
     <div class="container">
       <div class="contract_content_wrapper">
         <div class="contract_content">
@@ -173,119 +184,156 @@
             <div class="calculation_input_wrapper">
               <label class="label">Ваше имя</label>
               <input class="calculation_input" type="text">
-          </div>
-          <div class="calculation_input_wrapper">
-            <label class="label">Ваш номер телефона</label>
-            <input class="calculation_input" type="tel">
-         </div>
-         <div class="calculation_input_wrapper">
-          <label class="label">Комментарий</label>
-          <input class="calculation_input" type="text">
-      </div>
-         <div class="find_out_costButton">
-          <a href="#"><p class="find_out_costButtonText">Оставить заявку</p></a></div>
+            </div>
+            <div class="calculation_input_wrapper">
+              <label class="label">Ваш номер телефона</label>
+              <input class="calculation_input" type="tel">
+            </div>
+            <div class="calculation_input_wrapper">
+              <label class="label">Комментарий</label>
+              <input class="calculation_input" type="text">
+            </div>
+            <div class="find_out_costButton">
+              <a href="#">
+                <p class="find_out_costButtonText">Оставить заявку</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  <div class="LogisticsOperator">
+
+  <div id="LogisticsOperator" class="LogisticsOperator">
     <div class="container">
       <div class="LogisticsOperator_content">
         <div class="LogisticsOperator_left">
           <div class="LogisticsOperator_left_content">
             <div class="LogisticsOperator_logo_and_Main_Text">
-              <div class="LogisticsOperatorLogo"><img class="LogisticsOperatorLogoImg" src="./IMG/logo.svg" alt=""></div>
+              <div class="LogisticsOperatorLogo"><img class="LogisticsOperatorLogoImg" src="./IMG/logo.svg" alt="">
+              </div>
               <p class="LogisticsOperatorMainText">Оператор <br> логистических услуг</p>
             </div>
-              <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-              <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco.</p>
+            <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="LogisticsOperatorSubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
           <div class="LogisticsOperator_right"><img src="./IMG/Logistics_Operator2ballImg.png" alt=""></div>
-          </div>
+        </div>
 
         <div class="logisticsAdvantages">
           <div class="logisticsAdvantages_content_wrapper">
-              <div class="logisticsAdvantages_content">
-                  <div class="logisticsAdvantages_card">
-                    <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
-                    <div class="logisticsAdvantages_cardText">
-                      <p class="logisticsAdvantagesCardMainText">Бесплатная Страховка</p>
-                      <p class="logisticsAdvantagesCardSubText">Каждый кг застрахован на 3$</p>
-                    </div>
-                  </div>
-
-                  <div class="logisticsAdvantages_card">
-                    <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
-                    <div class="logisticsAdvantages_cardText">
-                      <p class="logisticsAdvantagesCardMainText">Декларируем Самостоятельно</p>
-                      <p class="logisticsAdvantagesCardSubText">Низкая стоимость за счет отсутствия посредников</p>
-                    </div>
-                  </div>
-
-                  <div class="logisticsAdvantages_card">
-                    <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
-                    <div class="logisticsAdvantages_cardText">
-                      <p class="logisticsAdvantagesCardMainText">Бесплатное хранение на наших складах</p>
-                      <p class="logisticsAdvantagesCardSubText">7 дней</p>
-                    </div>
-                  </div>
+            <div class="logisticsAdvantages_content">
+              <div class="logisticsAdvantages_card">
+                <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
+                <div class="logisticsAdvantages_cardText">
+                  <p class="logisticsAdvantagesCardMainText">Бесплатная Страховка</p>
+                  <p class="logisticsAdvantagesCardSubText">Каждый кг застрахован на 3$</p>
+                </div>
               </div>
+
+              <div class="logisticsAdvantages_card">
+                <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
+                <div class="logisticsAdvantages_cardText">
+                  <p class="logisticsAdvantagesCardMainText">Декларируем Самостоятельно</p>
+                  <p class="logisticsAdvantagesCardSubText">Низкая стоимость за счет отсутствия посредников</p>
+                </div>
+              </div>
+
+              <div class="logisticsAdvantages_card">
+                <img src="./IMG/China.png" alt="" class="logisticsAdvantagesCardImg">
+                <div class="logisticsAdvantages_cardText">
+                  <p class="logisticsAdvantagesCardMainText">Бесплатное хранение на наших складах</p>
+                  <p class="logisticsAdvantagesCardSubText">7 дней</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="why_we">
+  <div id="WhyWe" class="why_we">
     <div class="container">
-      <div class="why_weMain"><p class="why_weMainText">Почему мы?</p></div>
+      <div class="why_weMain">
+        <p class="why_weMainText">Почему мы?</p>
+      </div>
       <div class="why_we_content">
         <div class="why_we_left">
           <div class="why_we_leftUp">
-            <ul class="why_we_leftUpItems">
-              <li class="why_we_leftUpItem">Мы - транспортная компания со сложившейся репутацией;</li>
-              <li class="why_we_leftUpItem">Доставка из Китая любыми видами транспорта;</li>
-              <li class="why_we_leftUpItem">Вы можете заказать посылку из Китая в Россию весом от 1 кг;</li>
-              <li class="why_we_leftUpItem">Мы используем собственную логистику, которая позволяет минимизировать транспортные расходы;</li>
-              <li class="why_we_leftUpItem">Наши менеджеры отслеживают грузы из Китая на всем протяжении их маршрута вплоть до момента получения заказчиком</li>
-            </ul>
+            <div class="why_we_leftUpItems">
+              <div class="why_we_leftUpItem">
+                <div class="why_we_leftUpItemImg"><img src="./IMG/blue_rectangle.svg" alt=""></div>
+               <p class="why_weLeftUpItemtext">Мы - транспортная компания со сложившейся репутацией;</p>
+              </div>
+              <div class="why_we_leftUpItem">
+                <div class="why_we_leftUpItemImg"><img src="./IMG/blue_rectangle.svg" alt=""></div>
+               <p class="why_weLeftUpItemtext">Доставка из Китая любыми видами транспорта;</p>
+              </div>
+              <div class="why_we_leftUpItem">
+                <div class="why_we_leftUpItemImg"><img src="./IMG/blue_rectangle.svg" alt=""></div>
+               <p class="why_weLeftUpItemtext">Вы можете заказать посылку из Китая в Россию весом от 1 кг;</p>
+              </div>
+              <div class="why_we_leftUpItem">
+                <div class="why_we_leftUpItemImg"><img src="./IMG/blue_rectangle.svg" alt=""></div>
+               <p class="why_weLeftUpItemtext">Мы используем собственную логистику, которая позволяет минимизировать транспортные расходы;</p>
+              </div>
+              <div class="why_we_leftUpItem">
+                <div class="why_we_leftUpItemImg"><img src="./IMG/blue_rectangle.svg" alt=""></div>
+               <p class="why_weLeftUpItemtext">Наши менеджеры отслеживают грузы из Китая на всем протяжении их маршрута вплоть до момента получения заказчиком</p>
+              </div>
+            </div>
           </div>
           <div class="why_we_leftDown">
             <div class="why_we_leftDownContent">
               <div class="why_we_leftDownContent_wrapper">
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">2 000</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Год основания компании</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Год основания компании</p>
+                  </div>
                 </div>
-  
+
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">6 000</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Курьеров</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Курьеров</p>
+                  </div>
                 </div>
-  
+
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">1 000 000</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Активных пользователей</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Активных пользователей</p>
+                  </div>
                 </div>
-  
+
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">150 000</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Отправлений в день</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Отправлений в день</p>
+                  </div>
                 </div>
-  
+
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">35 000</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Населенных пунктов только по России</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Населенных пунктов только по России</p>
+                  </div>
                 </div>
-  
+
                 <div class="why_we_leftDownCard">
                   <p class="why_we_leftDownText">25</p>
-                  <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Стран</p></div>
+                  <div class="why_we_leftDownSub">
+                    <p class="why_we_leftDownSubText">Стран</p>
+                  </div>
                 </div>
-  
+
               </div>
             </div>
           </div>
@@ -293,38 +341,50 @@
         <div class="why_we_right">
           <img class="why_we_rightImg" src="./IMG/ChinaMap.png" alt="">
         </div>
-        
+
         <div class="why_we_leftDown forPhone">
           <div class="why_we_leftDownContent">
             <div class="why_we_leftDownContent_wrapper">
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">2 000</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Год основания компании</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Год основания компании</p>
+                </div>
               </div>
 
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">6 000</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Курьеров</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Курьеров</p>
+                </div>
               </div>
 
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">1 000 000</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Активных пользователей</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Активных пользователей</p>
+                </div>
               </div>
 
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">150 000</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Отправлений в день</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Отправлений в день</p>
+                </div>
               </div>
 
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">35 000</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Населенных пунктов только по России</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Населенных пунктов только по России</p>
+                </div>
               </div>
 
               <div class="why_we_leftDownCard">
                 <p class="why_we_leftDownText">25</p>
-                <div class="why_we_leftDownSub"><p class="why_we_leftDownSubText">Стран</p></div>
+                <div class="why_we_leftDownSub">
+                  <p class="why_we_leftDownSubText">Стран</p>
+                </div>
               </div>
 
             </div>
@@ -335,113 +395,132 @@
     </div>
   </div>
 
-<div class="FAQ">
-  <div class="container">
-    <div class="FAQ_content_Wrapper">
-      <p class="FAQ_MainText">Часто задаваемые вопросы</p>
+  <div id="FAQ" class="FAQ">
+    <div class="container">
+      <div class="FAQ_content_Wrapper">
+        <p class="FAQ_MainText">Часто задаваемые вопросы</p>
         <div class="FAQ_content">
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Сколько стоит доставка?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Что такое «место»?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Зачем нужна страховка?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Какие есть виды упаковки?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Как проверять груз при получении на складе?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Что значит перегрузка в регионы (Россия и Беларусь)?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <button class="FAQ_card">
-              <div class="FAQ_card_content">
-                <p class="FAQ_cardText">Можно доставить груз моей транспортной компанией?</p>
-                <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
-              </div>
-              <div class="FAQ_Card_DropDown_Menu">
-                <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia explicabo omnis id quia rem obcaecati modi accusantium.</p>
-              </div>
-            </button>
-
-            <div class="ask_question_wrapper">
-              <p class="ask_questionText">Не нашли ответ? Свяжитесь с нами и мы вам ответим!</p>
-              <div class="ask_question_button"><a href="#"><p class="ask_question_buttonText">Задать свой вопрос</p></a></div>
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Сколько стоит доставка?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
             </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Что такое «место»?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Зачем нужна страховка?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Какие есть виды упаковки?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Как проверять груз при получении на складе?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Что значит перегрузка в регионы (Россия и Беларусь)?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <button class="FAQ_card">
+            <div class="FAQ_card_content">
+              <p class="FAQ_cardText">Можно доставить груз моей транспортной компанией?</p>
+              <img src="./IMG/FAQ_card_arrow.svg" alt="" class="FAQ_card_img">
+            </div>
+            <div class="FAQ_Card_DropDown_Menu">
+              <p class="FAQ_Card_DropDown_MenuText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse veniam
+                nam saepe asperiores eveniet, neque dolore deserunt repudiandae quos iusto dignissimos mollitia
+                explicabo omnis id quia rem obcaecati modi accusantium.</p>
+            </div>
+          </button>
+
+          <div class="ask_question_wrapper">
+            <p class="ask_questionText">Не нашли ответ? Свяжитесь с нами и мы вам ответим!</p>
+            <div class="ask_question_button"><a href="#">
+                <p class="ask_question_buttonText">Задать свой вопрос</p>
+              </a></div>
+          </div>
 
         </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="work_with_everything">
-  <div class="container">
-    <div class="work_with_everything_content">
-      <div class="work_with_everything_left">
-        <p class="work_with_everything_leftMainText">Работаем с бизнесом <span>любого размера</span></p>
-        <p class="work_with_everything_leftSubText">Индивидуальный предприниматель или международная корпорация: широкий спектр <br> и высокое качество услуг доставки доступно всем</p>
-        <div class="work_with_everything_leftButton_wrapper">
-          <div class="work_with_everything_leftButton"><a href="#"><p class="work_with_everything_leftButtonText">Заключить договор</p></a></div>
-          <div class="dron"><img src="./IMG/dron.png" alt=""></div>
+  <div class="work_with_everything">
+    <div class="container">
+      <div class="work_with_everything_content">
+        <div class="work_with_everything_left">
+          <p class="work_with_everything_leftMainText">Работаем с бизнесом <span>любого размера</span></p>
+          <p class="work_with_everything_leftSubText">Индивидуальный предприниматель или международная корпорация:
+            широкий спектр <br> и высокое качество услуг доставки доступно всем</p>
+          <div class="work_with_everything_leftButton_wrapper">
+            <div class="work_with_everything_leftButton"><a href="#">
+                <p class="work_with_everything_leftButtonText">Заключить договор</p>
+              </a></div>
+            <div class="dron"><img src="./IMG/dron.png" alt=""></div>
+          </div>
+        </div>
+        <div class="work_with_everything_right">
+          <img class="work_with_everything_rightImg" src="./IMG/work_with_everythinImg.png" alt="">
         </div>
       </div>
-      <div class="work_with_everything_right">
-        <img class="work_with_everything_rightImg" src="./IMG/work_with_everythinImg.png" alt="">
-      </div>
     </div>
   </div>
-</div>
 
-<div class="transportation_Process">
-  <div class="container">
-    <p class="transportation_ProcessMainText">Процесс перевозок сборных грузов</p>
-    <div class="transportation_Process_content">
+  <div id="TransportationProcess" class="transportation_Process">
+    <div class="container">
+      <p class="transportation_ProcessMainText">Процесс перевозок сборных грузов</p>
+      <div class="transportation_Process_content">
         <div class="transportation_Process_cards">
 
           <div class="transportation_Process_card first">
@@ -453,10 +532,18 @@
 
           <div class="transportation_ProcessDown forPhone">
             <div class="transportation_ProcessDown_content">
-              <div class="transportation_ProcessDownCard one"><p class="transportation_ProcessDownCardText one">Получение предоплаты за товар, помощь с закупкой</p></div> 
-              <div class="transportation_ProcessDownCard two"><p class="transportation_ProcessDownCardText">Доставка груза с фабрики на пункт приема</p></div> 
-              <div class="transportation_ProcessDownCard three"><p class="transportation_ProcessDownCardText">Проверка количества</p></div> 
-              <div class="transportation_ProcessDownCard four"><p class="transportation_ProcessDownCardText">Подготовка груза к доставке в РФ</p></div> 
+              <div class="transportation_ProcessDownCard one">
+                <p class="transportation_ProcessDownCardText one">Получение предоплаты за товар, помощь с закупкой</p>
+              </div>
+              <div class="transportation_ProcessDownCard two">
+                <p class="transportation_ProcessDownCardText">Доставка груза с фабрики на пункт приема</p>
+              </div>
+              <div class="transportation_ProcessDownCard three">
+                <p class="transportation_ProcessDownCardText">Проверка количества</p>
+              </div>
+              <div class="transportation_ProcessDownCard four">
+                <p class="transportation_ProcessDownCardText">Подготовка груза к доставке в РФ</p>
+              </div>
             </div>
           </div>
 
@@ -483,102 +570,120 @@
         </div>
         <div class="transportation_ProcessDown">
           <div class="transportation_ProcessDown_content">
-            <div class="transportation_ProcessDownCard one"><p class="transportation_ProcessDownCardText">Получение предоплаты за товар, помощь с закупкой</p></div> 
-            <div class="transportation_ProcessDownCard two"><p class="transportation_ProcessDownCardText">Доставка груза с фабрики на пункт приема</p></div> 
-            <div class="transportation_ProcessDownCard three"><p class="transportation_ProcessDownCardText">Проверка количества</p></div> 
-            <div class="transportation_ProcessDownCard four"><p class="transportation_ProcessDownCardText">Подготовка груза к доставке в РФ</p></div> 
+            <div class="transportation_ProcessDownCard one">
+              <p class="transportation_ProcessDownCardText">Получение предоплаты за товар, помощь с закупкой</p>
+            </div>
+            <div class="transportation_ProcessDownCard two">
+              <p class="transportation_ProcessDownCardText">Доставка груза с фабрики на пункт приема</p>
+            </div>
+            <div class="transportation_ProcessDownCard three">
+              <p class="transportation_ProcessDownCardText">Проверка количества</p>
+            </div>
+            <div class="transportation_ProcessDownCard four">
+              <p class="transportation_ProcessDownCardText">Подготовка груза к доставке в РФ</p>
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="OurCargoes">
-  <div class="container">
-    <p class="OurCargoesMainText">Наши грузы:</p>
-    <div class="OurCargoes_content">
+  <div id="OurCargoes" class="OurCargoes">
+    <div class="container">
+      <p class="OurCargoesMainText">Наши грузы:</p>
+      <div class="OurCargoes_content">
         <div class="OurCargoes_card first">
           <div class="OurCargoes_card_content ">
-              <div class="OurCargoes_card_wrap"><p class="OurCargoes_cardText">Март 2023</p></div>
+            <div class="OurCargoes_card_wrap">
+              <p class="OurCargoes_cardText">Март 2023</p>
+            </div>
           </div>
         </div>
 
         <div class="OurCargoes_card scnd">
           <div class="OurCargoes_card_content ">
-              <div class="OurCargoes_card_wrap"><p class="OurCargoes_cardText">Март 2023</p></div>
+            <div class="OurCargoes_card_wrap">
+              <p class="OurCargoes_cardText">Март 2023</p>
+            </div>
           </div>
         </div>
 
         <div class="OurCargoes_card third ">
           <div class="OurCargoes_card_content ">
-              <div class="OurCargoes_card_wrap"><p class="OurCargoes_cardText">Март 2023</p></div>
+            <div class="OurCargoes_card_wrap">
+              <p class="OurCargoes_cardText">Март 2023</p>
+            </div>
           </div>
         </div>
 
         <div class="OurCargoes_card fourth">
           <div class="OurCargoes_card_content">
-              <div class="OurCargoes_card_wrap"><p class="OurCargoes_cardText">Март 2023</p></div>
+            <div class="OurCargoes_card_wrap">
+              <p class="OurCargoes_cardText">Март 2023</p>
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
-</div>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer_content">
-      <div class="footer_logo"><img src="./IMG/logo.svg" alt=""></div>
-      <div class="footer_scnd_section">
-        <p class="footer_scnd_sectionMainText">Главная</p>
-        <ul class="footer_scnd_sectionSubTexts">
-          <li><a class="footer_sectionSubText" href="#">Узнать стоимость</a></li>
-          <li><a class="footer_sectionSubText" href="#">Наши услуги</a></li>
-          <li><a class="footer_sectionSubText" href="#">Заключить договор</a></li>
-          <li><a class="footer_sectionSubText" href="#">О нас</a></li>
-        </ul>
-      </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_content">
+        <div class="footer_logo"><img src="./IMG/logo.svg" alt=""></div>
+        <div class="footer_scnd_section">
+          <p class="footer_scnd_sectionMainText">Главная</p>
+          <ul class="footer_scnd_sectionSubTexts">
+            <li><a class="footer_sectionSubText" href="#findOutCost">Узнать стоимость</a></li>
+            <li><a class="footer_sectionSubText" href="#OurServices">Наши услуги</a></li>
+            <li><a class="footer_sectionSubText" href="#Contract">Заключить договор</a></li>
+            <li><a class="footer_sectionSubText" href="#LogisticsOperator">О нас</a></li>
+          </ul>
+        </div>
 
-      <div class="footer_third_section">
-        <ul class="footer_third_sectionSubTexts">
-          <li><a class="footer_sectionSubText" href="#">Почему мы?</a></li>
-          <li><a class="footer_sectionSubText" href="#">Часто задаваемые вопросы</a></li>
-          <li><a class="footer_sectionSubText" href="#">Процесс перевозок</a></li>
-          <li><a class="footer_sectionSubText" href="#">Наши грузы</a></li>
-        </ul>
-      </div>
+        <div class="footer_third_section">
+          <ul class="footer_third_sectionSubTexts">
+            <li><a class="footer_sectionSubText" href="#WhyWe">Почему мы?</a></li>
+            <li><a class="footer_sectionSubText" href="#FAQ">Часто задаваемые вопросы</a></li>
+            <li><a class="footer_sectionSubText" href="#TransportationProcess">Процесс перевозок</a></li>
+            <li><a class="footer_sectionSubText" href="#OurCargoes">Наши грузы</a></li>
+          </ul>
+        </div>
 
-      <div class="footerContacts">
-        <p class="footerContactsMainText">Наши контакты</p>
-        <div class="footerPhone_and_work">
+        <div class="footerContacts">
+          <p class="footerContactsMainText">Наши контакты</p>
+          <div class="footerPhone_and_work">
             <img src="./IMG/phone.svg" alt="" class="footerPhoneImg">
             <div class="footerPhone_and_workText">
-            <a href="tel:79009009090" class="footerPhoneText">+7 900 900 90 90</a>
-            <p class="workText">Работаем с 8:00 по 17:00 МСК</p>
+              <a href="tel:79009009090" class="footerPhoneText">+7 900 900 90 90</a>
+              <p class="workText">Работаем с 8:00 по 17:00 МСК</p>
             </div>
-        </div>
-
-        <div class="footerMail">
-          <img src="./IMG/gmail.svg" alt="" class="footerMailImg">
-          <div class="gmailTexts">
-            <a href="mailto:someone@example.com" class="gmailText">info@brigroup.com</a>
-            <p class="gmailSubText">Ответим на любой ваш вопрос</p>
           </div>
-        </div>
-        <div class="footer_Social">
-          <a href="#" class="whats_app"><img src="./IMG/WhatsApp.svg" class="whats_appImg" alt=""></a>
-          <a href="#" class="telegram"><img src="./IMG/Telegram.svg" class="telegram" alt=""></a>
-        </div>
 
+          <div class="footerMail">
+            <img src="./IMG/gmail.svg" alt="" class="footerMailImg">
+            <div class="gmailTexts">
+              <a href="mailto:someone@example.com" class="gmailText">info@brigroup.com</a>
+              <p class="gmailSubText">Ответим на любой ваш вопрос</p>
+            </div>
+          </div>
+          <div class="footer_Social">
+            <a href="#" class="whats_app"><img src="./IMG/WhatsApp.svg" class="whats_appImg" alt=""></a>
+            <a href="#" class="telegram"><img src="./IMG/Telegram.svg" class="telegram" alt=""></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="confidentially">
+        <p class="confidentiallyMainText">Политика конфиденциальности</p>
+        <p class="confidentiallySubText">2023 © Все права защищены. **Количественные данные приведены на основании
+          среднегодовых статистических расчетов.</p>
       </div>
     </div>
-    <div class="confidentially">
-      <p class="confidentiallyMainText">Политика конфиденциальности</p>
-      <p class="confidentiallySubText">2023 © Все права защищены. **Количественные данные приведены на основании среднегодовых статистических расчетов.</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="./main.js"></script>
+  <script src="./main.js"></script>
 
 </body>
+
 </html>
