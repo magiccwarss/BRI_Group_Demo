@@ -1873,6 +1873,13 @@ body {
   }
 }
 @media (max-width: 1023px) {
+  .header{
+    position: fixed;
+    width: 100%;
+    background-color: #FAFAFA;
+    z-index: 10;
+  }
+
   .hamburger {
     display: inline-block;
     z-index: 80;
