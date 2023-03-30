@@ -1880,6 +1880,10 @@ body {
     z-index: 10;
   }
 
+  .general{
+    padding-top: 100px;
+  }
+
   .hamburger {
     display: inline-block;
     z-index: 80;
