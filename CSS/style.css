@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&display=swap");
 @font-face {
   font-family: "Golos";
@@ -614,6 +621,8 @@ body {
   max-height: 315px;
   height: 100%;
   width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(250, 250, 250, 0)), to(#FAFAFA));
+  background: -o-linear-gradient(top, rgba(250, 250, 250, 0) 0%, #FAFAFA 100%);
   background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #FAFAFA 100%);
   bottom: 0px;
   left: 0px;
@@ -776,8 +785,12 @@ body {
 }
 
 .why_we_leftUpItem{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
