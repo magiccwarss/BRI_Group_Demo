@@ -18,19 +18,23 @@ faqs.forEach((faq) => {
   });
 });
 
-const links = document.querySelectorAll('a');
 
-for (const link of links) {
-  link.addEventListener('click', clickHandler);
-}
+const burgerMenu = document.querySelector('.navigation_and_others');
+const menuItems = burgerMenu.querySelectorAll('a');
 
-function clickHandler(e) {
-  e.preventDefault();
-  const href = this.getAttribute('href');
-  const offsetTop = document.querySelector(href).offsetTop;
+menuItems.forEach((item) => {
+  item.addEventListener('click', (event) => {
+    // Удалить класс "active" у бургер-меню, чтобы закрыть его
+    burgerMenu.classList.remove('active');
+    hamburger.classList.remove('active');
 
-  scroll({
-    top: offsetTop,
-    behavior: 'smooth',
+    // Получить ссылку на элемент страницы, соответствующий выбранному пункту меню
+    const target = document.querySelector(event.target.hash);
+
+    // Прокрутить страницу к этому элементу
+    target.scrollIntoView({
+      behavior: 'smooth'
+    });
   });
-}
+});
+
