@@ -27,8 +27,7 @@
   src: url("../Fonts/Golos-Text_DemiBold.ttf");
 }
 
-
-body {
+html{
   scroll-behavior: smooth;
 }
 
