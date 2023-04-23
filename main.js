@@ -27,6 +27,7 @@ menuItems.forEach((item) => {
     // Удалить класс "active" у бургер-меню, чтобы закрыть его
     burgerMenu.classList.remove('active');
     hamburger.classList.remove('active');
+    bodyes.classList.remove('active');
 
     // Получить ссылку на элемент страницы, соответствующий выбранному пункту меню
     const target = document.querySelector(event.target.hash);
